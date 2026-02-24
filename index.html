@@ -48,6 +48,7 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" id="burgerBtn">☰</button>
       </div>
     </header>
 
@@ -121,13 +122,14 @@
           <ul class="team-list">
             <li class="person-card">
               <img
-                src="./images/img-3.jpg"
+                src="./images/guerrero.jpg"
+                srcset="./images/guerrero.jpg 1x, ./images/guerrero@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
               />
               <div class="person-info">
-                <h3 class="card-title">Mark Guerrero</h3>
+                <h3 class="team-card-title">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -163,13 +165,14 @@
             </li>
             <li class="person-card">
               <img
-                src="./images/img-2.jpg"
+                src="./images/ford.jpg"
+                srcset="./images/ford.jpg 1x, ./images/ford@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
               />
               <div class="person-info">
-                <h3 class="card-title">Tom Ford</h3>
+                <h3 class="team-card-title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -205,13 +208,14 @@
             </li>
             <li class="person-card">
               <img
-                src="./images/img-1.jpg"
+                src="./images/garcia.jpg"
+                srcset="./images/garcia.jpg 1x, ./images/garcia@2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
               />
               <div class="person-info">
-                <h3 class="card-title">Camila Garcia</h3>
+                <h3 class="team-card-title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -247,13 +251,14 @@
             </li>
             <li class="person-card">
               <img
-                src="./images/img.jpg"
+                src="./images/wilson.jpg"
+                srcset="./images/wilson.jpg 1x, ./images/wilson@2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
               />
               <div class="person-info">
-                <h3 class="card-title">Daniel Wilson</h3>
+                <h3 class="team-card-title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -298,10 +303,19 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/banking-app.jpg"
+                  src="./images/banking-app-mobile.jpg"
+                  srcset="
+                    ./images/banking-app-mobile.jpg      360w,
+                    ./images/banking-app-mobile@2x.jpg   720w,
+                    ./images/banking-app-tablet.jpg      768w,
+                    ./images/banking-app-tablet@2x.jpg  1536w,
+                    ./images/banking-app-desktop.jpg    1158w,
+                    ./images/banking-app-desktop@2x.jpg 2316w
+                  "
+                  sizes="(min-width: 1158px) 360px,
+                         (min-width: 768px) 356px,
+                         100vw"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -310,7 +324,7 @@
                 </p>
               </div>
               <div class="portfolio-info">
-                <h3 class="card-title">Banking App</h3>
+                <h3 class="portfolio-card-title">Banking App</h3>
                 <p class="text">App</p>
               </div>
             </li>
@@ -318,7 +332,18 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  src="./images/cashless-payment-mobile.jpg"
+                  srcset="
+                    ./images/cashless-payment-mobile.jpg      360w,
+                    ./images/cashless-payment-mobile@2x.jpg   720w,
+                    ./images/cashless-payment-tablet.jpg      768w,
+                    ./images/cashless-payment-tablet@2x.jpg  1536w,
+                    ./images/cashless-payment-desktop.jpg    1158w,
+                    ./images/cashless-payment-desktop@2x.jpg 2316w
+                  "
+                  sizes="(min-width: 1158px) 360px,
+                         (min-width: 768px) 356px,
+                         100vw"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -329,7 +354,7 @@
                 </p>
               </div>
               <div class="portfolio-info">
-                <h3 class="card-title">Cashless Payment</h3>
+                <h3 class="portfolio-card-title">Cashless Payment</h3>
                 <p class="text">Marketing</p>
               </div>
             </li>
@@ -337,7 +362,18 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/meditation-app.jpg"
+                  src="./images/meditation-app-mobile.jpg"
+                  srcset="
+                    ./images/meditation-app-mobile.jpg      360w,
+                    ./images/meditation-app-mobile@2x.jpg   720w,
+                    ./images/meditation-app-tablet.jpg      768w,
+                    ./images/meditation-app-tablet@2x.jpg  1536w,
+                    ./images/meditation-app-desktop.jpg    1158w,
+                    ./images/meditation-app-desktop@2x.jpg 2316w
+                  "
+                  sizes="(min-width: 1158px) 360px,
+                         (min-width: 768px) 356px,
+                         100vw"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -347,7 +383,7 @@
                 </p>
               </div>
               <div class="portfolio-info">
-                <h3 class="card-title">Meditation App</h3>
+                <h3 class="portfolio-card-title">Meditation App</h3>
                 <p class="text">App</p>
               </div>
             </li>
@@ -355,7 +391,18 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/taxi-service.jpg"
+                  src="./images/taxi-service-mobile.jpg"
+                  srcset="
+                    ./images/taxi-service-mobile.jpg      360w,
+                    ./images/taxi-service-mobile@2x.jpg   720w,
+                    ./images/taxi-service-tablet.jpg      768w,
+                    ./images/taxi-service-tablet@2x.jpg  1536w,
+                    ./images/taxi-service-desktop.jpg    1158w,
+                    ./images/taxi-service-desktop@2x.jpg 2316w
+                  "
+                  sizes="(min-width: 1158px) 360px,
+                         (min-width: 768px) 356px,
+                         100vw"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -365,7 +412,7 @@
                 </p>
               </div>
               <div class="portfolio-info">
-                <h3 class="card-title">Taxi Service</h3>
+                <h3 class="portfolio-card-title">Taxi Service</h3>
                 <p class="text">Marketing</p>
               </div>
             </li>
@@ -373,7 +420,18 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/screen-illustration.jpg"
+                  src="./images/screen-illustration-mobile.jpg"
+                  srcset="
+                    ./images/screen-illustration-mobile.jpg      360w,
+                    ./images/screen-illustration-mobile@2x.jpg   720w,
+                    ./images/screen-illustration-tablet.jpg      768w,
+                    ./images/screen-illustration-tablet@2x.jpg  1536w,
+                    ./images/screen-illustration-desktop.jpg    1158w,
+                    ./images/screen-illustration-desktop@2x.jpg 2316w
+                  "
+                  sizes="(min-width: 1158px) 360px,
+                         (min-width: 768px) 356px,
+                         100vw"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -383,7 +441,7 @@
                 </p>
               </div>
               <div class="portfolio-info">
-                <h3 class="card-title">Screen Illustrations</h3>
+                <h3 class="portfolio-card-title">Screen Illustrations</h3>
                 <p class="text">Design</p>
               </div>
             </li>
@@ -391,7 +449,18 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/online-courses.jpg"
+                  src="./images/online-courses-mobile.jpg"
+                  srcset="
+                    ./images/online-courses-mobile.jpg      360w,
+                    ./images/online-courses-mobile@2x.jpg   720w,
+                    ./images/online-courses-tablet.jpg      768w,
+                    ./images/online-courses-tablet@2x.jpg  1536w,
+                    ./images/online-courses-desktop.jpg    1158w,
+                    ./images/online-courses-desktop@2x.jpg 2316w
+                  "
+                  sizes="(min-width: 1158px) 360px,
+                         (min-width: 768px) 356px,
+                         100vw"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -401,7 +470,7 @@
                 </p>
               </div>
               <div class="portfolio-info">
-                <h3 class="card-title">Online Courses</h3>
+                <h3 class="portfolio-card-title">Online Courses</h3>
                 <p class="text">Marketing</p>
               </div>
             </li>
@@ -475,6 +544,56 @@
         </form>
       </div>
     </footer>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <button type="button" class="mobile-close-btn">
+        <svg width="8" height="8" class="mobile-close-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="./index.html" class="nav-link current">Studio</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-contact">
+        <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="modal-overlay">
       <div class="modal">
