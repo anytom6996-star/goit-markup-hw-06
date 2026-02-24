@@ -34,7 +34,8 @@ img {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -47,7 +48,6 @@ img {
 @media (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
   }
 }
 
@@ -64,7 +64,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
 }
 
 .logo {
@@ -140,10 +139,17 @@ img {
 }
 
 .burger-btn {
-  background: none;
+  background-color: transparent;
   border: none;
-  font-size: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+
+.burger-btn svg {
+  fill: #2e2f42;
 }
 
 .mobile-menu {
@@ -155,10 +161,16 @@ img {
   height: 100vh;
   background-color: #fff;
   padding: 72px 24px 40px 16px;
-  transform: translateX(100%);
-  transition: transform 300ms ease;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: 
+    transform 300ms ease,
+    opacity 300ms ease,
+    visibility 300ms ease;
 }
 
 @media (min-width: 768px) {
@@ -194,7 +206,18 @@ img {
   margin-top: 48px;
 }
 
+.mobile-menu-container {
+  max-width: 320px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   transform: translateX(0);
 }
 
@@ -321,7 +344,7 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 72px 0;
   max-width: 320px;
   margin: 0 auto;
   background-image:
