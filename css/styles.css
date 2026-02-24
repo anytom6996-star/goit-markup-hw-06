@@ -48,6 +48,7 @@ img {
 @media (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 }
 
@@ -309,7 +310,7 @@ img {
   }
 
   .header-container {
-    padding: 16px 0;
+    padding: 0;
   }
 }
 
@@ -760,7 +761,7 @@ img {
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-container {
@@ -921,9 +922,15 @@ img {
     margin-top: 48px;
   }
 
+    .footer-input {
+    width: 264px;
+  }
+
+
   .footer-form-wrapper {
     flex-direction: row;
     justify-content: flex-start;
+    gap: 24px;
   }
 }
 
@@ -1048,7 +1055,7 @@ img {
 }
 
 .modal-form {
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .input-wrapper {
