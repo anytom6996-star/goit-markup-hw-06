@@ -224,8 +224,8 @@ img {
 
 .mobile-close-icon {
   stroke: currentColor;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
 }
 
 .mobile-close-btn:hover,
@@ -244,7 +244,7 @@ img {
   gap: 40px;
 }
 
-.mobile-nav a {
+.mobile-nav-link  {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.5;
@@ -253,12 +253,12 @@ img {
   text-align: left;
 }
 
-.mobile-nav a.current {
+.mobile-nav-link.current {
   color: #404bbf;
 }
 
-.mobile-nav a:hover,
-.mobile-nav a:focus {
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
   color: #404bbf;
 }
 
@@ -326,7 +326,7 @@ img {
   }
 
   .header-container {
-    padding: 24px 0;
+    padding: 0;
   }
 }
 
@@ -412,6 +412,7 @@ img {
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
+    margin-bottom: 36px;
   }
 }
 
@@ -436,6 +437,7 @@ img {
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
+    margin-bottom: 48px;
   }
 }
 
@@ -572,6 +574,7 @@ img {
   background-color: #ffffff;
   width: 100%;
   max-width: 264px;
+  margin: 0 auto;
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
