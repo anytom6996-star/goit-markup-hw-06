@@ -302,188 +302,244 @@
       </section>
 
       <section class="portfolio">
-        <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
-          <ul class="portfolio-list">
-            <li class="portfolio-item">
-              <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/banking-app-mobile.jpg"
-                  srcset="
-                    ./images/banking-app-mobile.jpg      360w,
-                    ./images/banking-app-mobile@2x.jpg   720w,
-                    ./images/banking-app-tablet.jpg      768w,
-                    ./images/banking-app-tablet@2x.jpg  1536w,
-                    ./images/banking-app-desktop.jpg    1158w,
-                    ./images/banking-app-desktop@2x.jpg 2316w
-                  "
-                  sizes="(min-width: 1158px) 360px,
-                         (min-width: 768px) 356px,
-                         100vw"
-                  width="360"
-                  height="300"       
-                  alt="Banking App"
-                />
-                <p class="overlay-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="portfolio-card-title">Banking App</h3>
-                <p class="text">App</p>
-              </div>
-            </li>
+  <div class="container">
+    <h2 class="section-title">Our Portfolio</h2>
 
-            <li class="portfolio-item">
-              <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/cashless-payment-mobile.jpg"
-                  srcset="
-                    ./images/cashless-payment-mobile.jpg      360w,
-                    ./images/cashless-payment-mobile@2x.jpg   720w,
-                    ./images/cashless-payment-tablet.jpg      768w,
-                    ./images/cashless-payment-tablet@2x.jpg  1536w,
-                    ./images/cashless-payment-desktop.jpg    1158w,
-                    ./images/cashless-payment-desktop@2x.jpg 2316w
-                  "
-                  sizes="(min-width: 1158px) 360px,
-                         (min-width: 768px) 356px,
-                         100vw"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
-                <p class="overlay-text">
-                  Innovative payment solutions for modern businesses and
-                  customers.
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="portfolio-card-title">Cashless Payment</h3>
-                <p class="text">Marketing</p>
-              </div>
-            </li>
+    <ul class="portfolio-list">
 
-            <li class="portfolio-item">
-              <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/meditation-app-mobile.jpg"
-                  srcset="
-                    ./images/meditation-app-mobile.jpg      360w,
-                    ./images/meditation-app-mobile@2x.jpg   720w,
-                    ./images/meditation-app-tablet.jpg      768w,
-                    ./images/meditation-app-tablet@2x.jpg  1536w,
-                    ./images/meditation-app-desktop.jpg    1158w,
-                    ./images/meditation-app-desktop@2x.jpg 2316w
-                  "
-                  sizes="(min-width: 1158px) 360px,
-                         (min-width: 768px) 356px,
-                         100vw"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
-                <p class="overlay-text">
-                  Calm and mindful mobile experience for everyday relaxation.
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="portfolio-card-title">Meditation App</h3>
-                <p class="text">App</p>
-              </div>
-            </li>
+      <!-- 1. Banking App -->
+      <li class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/banking-app-desktop.jpg 1x,
+                ./images/banking-app-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/banking-app-tablet.jpg 1x,
+                ./images/banking-app-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/banking-app-mobile.jpg"
+              srcset="./images/banking-app-mobile@2x.jpg 2x"
+              alt="Banking App"
+              width="360"
+              height="300"
+            />
+          </picture>
 
-            <li class="portfolio-item">
-              <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/taxi-service-mobile.jpg"
-                  srcset="
-                    ./images/taxi-service-mobile.jpg      360w,
-                    ./images/taxi-service-mobile@2x.jpg   720w,
-                    ./images/taxi-service-tablet.jpg      768w,
-                    ./images/taxi-service-tablet@2x.jpg  1536w,
-                    ./images/taxi-service-desktop.jpg    1158w,
-                    ./images/taxi-service-desktop@2x.jpg 2316w
-                  "
-                  sizes="(min-width: 1158px) 360px,
-                         (min-width: 768px) 356px,
-                         100vw"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
-                <p class="overlay-text">
-                  Fast and reliable taxi booking application interface.
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="portfolio-card-title">Taxi Service</h3>
-                <p class="text">Marketing</p>
-              </div>
-            </li>
-
-            <li class="portfolio-item">
-              <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/screen-illustration-mobile.jpg"
-                  srcset="
-                    ./images/screen-illustration-mobile.jpg      360w,
-                    ./images/screen-illustration-mobile@2x.jpg   720w,
-                    ./images/screen-illustration-tablet.jpg      768w,
-                    ./images/screen-illustration-tablet@2x.jpg  1536w,
-                    ./images/screen-illustration-desktop.jpg    1158w,
-                    ./images/screen-illustration-desktop@2x.jpg 2316w
-                  "
-                  sizes="(min-width: 1158px) 360px,
-                         (min-width: 768px) 356px,
-                         100vw"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
-                <p class="overlay-text">
-                  Creative digital illustrations for modern web platforms.
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="portfolio-card-title">Screen Illustrations</h3>
-                <p class="text">Design</p>
-              </div>
-            </li>
-
-            <li class="portfolio-item">
-              <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/online-courses-mobile.jpg"
-                  srcset="
-                    ./images/online-courses-mobile.jpg      360w,
-                    ./images/online-courses-mobile@2x.jpg   720w,
-                    ./images/online-courses-tablet.jpg      768w,
-                    ./images/online-courses-tablet@2x.jpg  1536w,
-                    ./images/online-courses-desktop.jpg    1158w,
-                    ./images/online-courses-desktop@2x.jpg 2316w
-                  "
-                  sizes="(min-width: 1158px) 360px,
-                         (min-width: 768px) 356px,
-                         100vw"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
-                <p class="overlay-text">
-                  Educational platform interface with modern UX solutions.
-                </p>
-              </div>
-              <div class="portfolio-info">
-                <h3 class="portfolio-card-title">Online Courses</h3>
-                <p class="text">Marketing</p>
-              </div>
-            </li>
-          </ul>
+          <p class="overlay-text">
+            14 Stylish and User-Friendly App Design Concepts · Task
+            Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+            · Cloud Storage App
+          </p>
         </div>
-      </section>
+
+        <div class="portfolio-info">
+          <h3 class="portfolio-card-title">Banking App</h3>
+          <p class="text">App</p>
+        </div>
+      </li>
+
+      <!-- 2. Cashless Payment -->
+      <li class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/cashless-payment-desktop.jpg 1x,
+                ./images/cashless-payment-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/cashless-payment-tablet.jpg 1x,
+                ./images/cashless-payment-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/cashless-payment-mobile.jpg"
+              srcset="./images/cashless-payment-mobile@2x.jpg 2x"
+              alt="Cashless Payment"
+              width="360"
+              height="300"
+            />
+          </picture>
+
+          <p class="overlay-text">
+            Innovative payment solutions for modern businesses and customers.
+          </p>
+        </div>
+
+        <div class="portfolio-info">
+          <h3 class="portfolio-card-title">Cashless Payment</h3>
+          <p class="text">Marketing</p>
+        </div>
+      </li>
+
+      <!-- 3. Meditation App -->
+      <li class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/meditation-app-desktop.jpg 1x,
+                ./images/meditation-app-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/meditation-app-tablet.jpg 1x,
+                ./images/meditation-app-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/meditation-app-mobile.jpg"
+              srcset="./images/meditation-app-mobile@2x.jpg 2x"
+              alt="Meditation App"
+              width="360"
+              height="300"
+            />
+          </picture>
+
+          <p class="overlay-text">
+            Calm and mindful mobile experience for everyday relaxation.
+          </p>
+        </div>
+
+        <div class="portfolio-info">
+          <h3 class="portfolio-card-title">Meditation App</h3>
+          <p class="text">App</p>
+        </div>
+      </li>
+
+      <!-- 4. Taxi Service -->
+      <li class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/taxi-service-desktop.jpg 1x,
+                ./images/taxi-service-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/taxi-service-tablet.jpg 1x,
+                ./images/taxi-service-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/taxi-service-mobile.jpg"
+              srcset="./images/taxi-service-mobile@2x.jpg 2x"
+              alt="Taxi Service"
+              width="360"
+              height="300"
+            />
+          </picture>
+
+          <p class="overlay-text">
+            Fast and reliable taxi booking application interface.
+          </p>
+        </div>
+
+        <div class="portfolio-info">
+          <h3 class="portfolio-card-title">Taxi Service</h3>
+          <p class="text">Marketing</p>
+        </div>
+      </li>
+
+      <!-- 5. Screen Illustrations -->
+      <li class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/screen-illustration-desktop.jpg 1x,
+                ./images/screen-illustration-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/screen-illustration-tablet.jpg 1x,
+                ./images/screen-illustration-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/screen-illustration-mobile.jpg"
+              srcset="./images/screen-illustration-mobile@2x.jpg 2x"
+              alt="Screen Illustrations"
+              width="360"
+              height="300"
+            />
+          </picture>
+
+          <p class="overlay-text">
+            Creative digital illustrations for modern web platforms.
+          </p>
+        </div>
+
+        <div class="portfolio-info">
+          <h3 class="portfolio-card-title">Screen Illustrations</h3>
+          <p class="text">Design</p>
+        </div>
+      </li>
+
+      <!-- 6. Online Courses -->
+      <li class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/online-courses-desktop.jpg 1x,
+                ./images/online-courses-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/online-courses-tablet.jpg 1x,
+                ./images/online-courses-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/online-courses-mobile.jpg"
+              srcset="./images/online-courses-mobile@2x.jpg 2x"
+              alt="Online Courses"
+              width="360"
+              height="300"
+            />
+          </picture>
+
+          <p class="overlay-text">
+            Educational platform interface with modern UX solutions.
+          </p>
+        </div>
+
+        <div class="portfolio-info">
+          <h3 class="portfolio-card-title">Online Courses</h3>
+          <p class="text">Marketing</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  </section>
     </main>
 
     <footer class="page-footer">
