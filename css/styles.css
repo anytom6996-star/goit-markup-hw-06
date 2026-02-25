@@ -169,9 +169,9 @@ img {
   pointer-events: none;
   transform: translateX(100%);
   transition: 
-    transform 300ms ease,
-    opacity 300ms ease,
-    visibility 300ms ease;
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 768px) {
@@ -247,8 +247,8 @@ img {
 .mobile-nav-link  {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.5;
-  color: #2e2f42;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   text-decoration: none;
   text-align: left;
 }
@@ -273,9 +273,14 @@ img {
 .mobile-contact a {
   text-decoration: none;
   color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .mobile-contact a:first-child {
+  font-size: 24px;
+  font-weight: 700;
   color: #4d5ae5;
 }
 
@@ -373,7 +378,7 @@ img {
   color: #ffffff;
   text-align: center;
   max-width: 216px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -479,6 +484,10 @@ img {
   color: #434455;
 }
 
+.features .text {
+  font-weight: 500;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -511,6 +520,13 @@ img {
 
 .icon {
   fill: #2e2f42;
+}
+
+.features .card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -553,6 +569,10 @@ img {
   .features .card-title {
     font-weight: 500;
     font-size: 20px;
+    line-height: 1.2;
+  }
+  .features .text {
+    font-weight: 400;
   }
 }
 
