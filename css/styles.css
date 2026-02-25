@@ -252,6 +252,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   text-align: left;
+  color: #2e2f42;
 }
 
 .mobile-nav-link.current {
@@ -276,12 +277,11 @@ img {
   color: #434455;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .mobile-contact a:first-child {
-  font-size: 24px;
-  font-weight: 700;
   color: #4d5ae5;
 }
 
